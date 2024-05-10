@@ -1,9 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coupon Display</title>
+<style>
+  .coupon {
+    border: 5px dashed #bbb; /* Dashed border */
+    width: 80%;
+    margin: 0 auto;
+    max-width: 300px;
+    box-shadow: 10px 10px 5px #888888;
+  }
+
+  .container {
+    padding: 2px 16px;
+    background-color: #f1f1f1;
+  }
+
+  .promo {
+    background: #ccc;
+    padding: 3px;
+  }
+
+  .expire {
+    color: red;
+  }
+</style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="coupon">
+  <div class="container">
+  </div>
+  <div class="container" style="background-color:white">
+    <h2><b>25% OFF YOUR PURCHASE</b></h2>
+    <p>Use this coupon to get 25% off on your next purchase at Company One.</p>
+  </div>
+  <div class="container">
+    <p>Use Promo Code: <span class="promo">COUPON1</span></p>
+    <p class="expire">Expires: Jan 03, 2025</p>
+  </div>
+</div>
+
+<!-- Add more coupon divs here for different companies -->
 
 </body>
 </html>
